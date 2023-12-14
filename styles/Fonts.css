@@ -1,0 +1,121 @@
+/* author */
+@font-face {
+    font-family: 'Author-Variable';
+    src: url('./Fonts/Author_Complete/Fonts/WEB/fonts/Author-Variable.woff2') format('woff2'),
+         url('../Fonts/Author_Complete/Fonts/WEB/fonts/Author-Variable.woff') format('woff'),
+         url('Fonts/Author_Complete/Fonts/Variable/Author-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  /* gambetta */
+  @font-face {
+    font-family: 'Gambetta-Variable';
+    src: url('../fonts/Gambetta-Variable.woff2') format('woff2'),
+         url('../fonts/Gambetta-Variable.woff') format('woff'),
+         url('../fonts/Gambetta-Variable.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+/* manrope */
+  @font-face {
+    font-family: 'Manrope-Variable';
+    src: url('../fonts/Manrope-Variable.woff2') format('woff2'),
+         url('../fonts/Manrope-Variable.woff') format('woff'),
+         url('../fonts/Manrope-Variable.ttf') format('truetype');
+         font-weight: 200 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-ExtraLight';
+    src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+         url('../fonts/Manrope-ExtraLight.woff') format('woff'),
+         url('../fonts/Manrope-ExtraLight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-Light';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+         url('../fonts/Manrope-Light.woff') format('woff'),
+         url('../fonts/Manrope-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+         url('../fonts/Manrope-Regular.woff') format('woff'),
+         url('../fonts/Manrope-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-Medium';
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+         url('../fonts/Manrope-Medium.woff') format('woff'),
+         url('../fonts/Manrope-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+         url('../fonts/Manrope-SemiBold.woff') format('woff'),
+         url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+         url('../fonts/Manrope-Bold.woff') format('woff'),
+         url('../fonts/Manrope-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Manrope-ExtraBold.woff') format('woff'),
+         url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+
+/* pencerio */
+  @font-face {
+    font-family: 'Pencerio-Hairline';
+    src: url('../fonts/Pencerio-Hairline.woff2') format('woff2'),
+         url('../fonts/Pencerio-Hairline.woff') format('woff'),
+         url('../fonts/Pencerio-Hairline.ttf') format('truetype');
+         font-weight: 50;
+         font-display: swap;
+         font-style: normal;
+  }
+  

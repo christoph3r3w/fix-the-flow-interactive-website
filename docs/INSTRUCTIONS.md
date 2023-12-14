@@ -1,55 +1,42 @@
+# The Client Case
 
-# Fix the Flow - Interactive Website
-
-Ontwerp en maak een interactieve website voor een opdrachtgever.
+Ontwerp en maak een component / website voor een bedrijf en presenteer het resultaat.
 
 ## Context
+Deze leertaak hoort bij sprint 2 The Client. 
+Dit is een opdracht die je individueel uitvoert voor een opdrachtgever.
 
-Deze leertaak hoort bij sprint 5 _Fix the Flow_, dit is een leertaak die je individueel uitvoert.
+Bij deze leertaak hoort de deeltaak:
+- [The Client - Briefing/Debriefing](https://github.com/fdnd-task/the-client-briefing-debriefing/)
 
-In het college _S05W1-01-Sprintplanning-interactie-en-wireflows_ krijg je uitleg over de opdracht. In de workshop _S05W1-02-Programming-interaction_ leer je hoe je met CSS en JS interactie codeert.
-
-Bij deze leertaak horen de deeltaken:
-- [Fix-the-flow-wireflow](https://github.com/fdnd-task/fix-the-flow-wireflow)
-- [Fix-the-flow-ui-events](https://github.com/fdnd-task/fix-the-flow-ui-events) 
 
 ## Doel van deze opdracht
-
-Je leert hoe je goede interactie kan ontwerpen en maken. 
+Je leert hoe je aan de hand van een user story een (gedeelte van een) website kan ontwerpen en bouwen.
 
 ## Werkwijze
+Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt.
+De development lifecycle kent de volgende stappen:
 
-Voor deze opdracht kies je een User Story waarin een gebruiker iets moet doen, zoals het toevoegen van informatie aan een agenda of stap voor stap door een vragenlijst klikken, een chat-formulier of bijvoorbeeld een filter systeem. 
-
-Als een gebruiker interactie heeft met een website, moet je goede feedback/feedforward ontwerpen en maken. Zo weet een gebruiker wat die kan verwachten en of de actie gelukt is. 
-
-Voor deze opdracht ga je eerst leren een wireflow te tekenen van de interactie die je wil maken. Dat doe je in de deeltaak [fix-the-flow-wireflow](https://github.com/fdnd-task/fix-the-flow-wireflow). Daarna ga je de interactie coderen met HTML, CSS en JS. Tijdens een code/design review ga je de interactie leren testen met een User test. 
+1. Analyseren - bijvoorbeeld: grip krijgen op een taak door gesprekken met een opdrachtgever, schrijven van een debriefing, maken van een todo lijst, inventarisatie van bestaande informatie, overzicht creëren, plannen, definition of done etc.
+2. Ontwerpen - bijvoorbeeld: het maken van idee-schetsen, customer journey, breakdown chart, wireflows, navigatiestructuur en layout.
+3. Bouwen - bijvoorbeeld: toepassen van webtechnologie (HTML, CSS, JS), gebruik van tooling, werken volgens conventies en wetgeving, documenteren en bijhouden van een changelog.
+4. Integreren - bijvoorbeeld: publiceren, live zetten, uploaden naar de server, toevoegen in een bestaand systeem, ftp-en.
+5. Testen - bijvoorbeeld: Unit testing (TDD), System test, User test, device lab test, A\B testing.
 
 ### Aanpak
+1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).  
+2. Fork deze leertaak
+3. Kopieer/plak de user story waar jij aan gaat werken naar de Wiki van de geforkte repository, dit ga je ontwerpen en maken
+4. Documenteer je proces a.h.v de development life cycle
+5. En schrijf een goede readme
 
-1. Fork deze leertaak.
-2. Lees de leertaak nauwkeurig door.
-3. Zet de Wiki klaar om je proces te documenteren, gebruik hiervoor de fases van de DLC en noteer de DOD's.
-4. Verwerk de feedback die je hebt gekregen tijdens de sprint-review van sprint 4, zet de feedback in issues en/of maak een projectboard aan. Bespreek dit met een docent (checkpoint).
-5. Kies een User Story uit de backlog van het project, of schrijf zelf een User Story om deze sprint aan te gaan werken. De User story moet gaan over een interactief element.
-6. Teken een Wireflow van de User Story (deeltaak _Wireflow_). Bespreek dit met een docent (checkpoint).
-7. Codeer de interactie met behulp vam JS en documenteer het eindresultaat in de Wiki. 
-8. Test je ontwerp tijdens de code/design review in de eerste week. maak issues aan van de feedback die je krijgt en verbeter de feedback.
-9. Doe een user test tijdens de code/design review in de tweede week en schrijf een verslag van de user test in de Wiki.
-10. Presenteer je werk tijdens de sprint review aan de opdrachtgever.
+## Definition of done
 
-### Materiaal
-
-- Tutorial  [if you only know one thing about JavaScript, this is what I would recommend](https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/)
-- [MDN QuerySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-- [MDN ClassList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
-- [MDN addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-
-## Criteria
+Focus sprint 2: The client - De focus van deze sprint ligt op het maken van een opdracht voor een opdrachtgever en het presenteren van het resultaat.
 
 Deze opdracht is done als:
+- [ ] Je hebt gewerkt volgens de verschillende fases van de development-lifecycle
+- [ ] Je hebt je werk gedocumenteerd in de Readme en Wiki (user story, ontwerpbeslissingen, schetsen en code voorbeelden)
+- [ ] de website staat op Github en heeft een live url
 
-- [ ] Je hebt een interactie gecodeerd en het proces en eindresultaat gedocumenteerd in de Readme
-- [ ] Je hebt een code/design review gedaan, issues aangemaakt en de feedback verwerkt
-- [ ] Je hebt een user test gedaan en de test gedocumenteerd in de wiki
 

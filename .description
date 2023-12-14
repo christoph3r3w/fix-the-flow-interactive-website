@@ -1,0 +1,20 @@
+---
+title: "Contact microsite"                 
+client: "FDND"          
+description: "Verbeter de contact microsite van FDND"    
+semester: 1                       
+sprint: 2                       
+support-level: 1                 
+behavior-criteria:                  
+  collaboration: 0                
+  learning-capacity: 1            
+  problem-solving: 1              
+  act-methodically: 1             
+  communicating: 0                
+collaborators: 1                  
+tags:                               
+  - huisstijl                                        
+  - html
+  - css
+burn-points: 1  
+---

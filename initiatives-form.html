@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW-form</title>
+    <!-- <link rel="stylesheet" href="/styles\test-filter.css"> -->
+    <link rel="stylesheet" href="/styles/initiatives-form.css">
+    <!-- <link rel="stylesheet" href="/styles/Fonts"> -->
+    <script src="./script/form.js"> </script>
+</head>
+
+<body>
+    
+    <header>
+            <a href="index.html" class="logo">
+                <span class="spanone">.
+                    <!-- <a href="index3.html">.</a> -->
+                </span>
+                <span class="spantwo">w</span>
+            </a>
+            <!-- go back button   -->
+            <a href="test-filter.html" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+            </a>  
+            
+    </header>
+
+        <section class="background" id="bgrnd">
+            <article>
+                <h1>title</h1>
+                <p>form describtion </p>
+                <form action="get">
+                    <fieldset>
+                        <legend>Event</legend>
+                        <div>
+                            <label for="f-event-title" >Event name</label>
+                            <input type="text" id="f-event-title" title="event-name" required>
+                        </div>
+                        <div>
+                            <label for="f-event-DateTime" >Date & time</label>
+                            <input type="date" id="f-event-DateTime" title="event-name">
+                            <input type="time" id="f-event-DateTime" title="event-name">
+                        </div>
+                        <div>
+                            <label for="f-event-location" >Location</label>
+                            <input type="text" id="f-event-location" title="event-location" required>
+                        </div>
+                        <div>
+                            <label for="f-event-decribtion" >describe the event</label>
+                            <textarea name="" id="f-event-decribtion" rows="10" placeholder="uitleg"></textarea>                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Filter options</legend>
+                        <div class="bar">
+                                <!-- main option -->
+                                <section class="filter options">
+
+                                    <a href="#comu" class="option do" id="do" rel="no-refresh">
+                                        do something
+                                    </a>
+                                    <a  href="#food" class="option community" id="comu" rel="no-refresh">
+                                        community 
+                                    </a>
+                                    <a  href="#other" class="option food" id="food" rel="no-refresh">
+                                        food
+                                    </a>
+                                    <a  href="#choose" class="option other" id="other" rel="no-refresh">
+                                        other
+                                    </a>
+                                    <a  href="#do" class="option choose" id="choose" rel="no-refresh">
+                                        choose
+                                    </a>
+                                </section>
+                                <!-- market and initiatives -->
+                                <section class="filter M-I">
+                                    <label for="market" class="pink">
+                                        <input type="radio" name="pink-choice" id="market"> market
+                                    </label>
+                                
+                                    <label for="initiatives" class="pink">
+                                        <input type="radio" name="pink-choice" id="initiatives" > initiatives
+                                    </label>
+
+                                    <label for="Both" class="pink">
+                                        <input type="radio" name="pink-choice" id="Both" > Both
+                                    </label>
+                                </section>
+                                <!-- categories -->
+                                <section class="filter category">
+                                    <div class="moreOption choose">
+                                        <label for="f-filter-tag">
+                                            Tag
+                                            <input type="text" id="f-filter-tag">
+                                        </label>
+                    
+                    
+                    
+                                     </div>
+                                </section>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Personal  </legend>
+                        <div>
+                            <label for="f-personal-name" >Fullname</label>
+                            <input type="text" id="f-personal-name" title="fullname" required>
+                        </div>
+                        <div>
+                            <label for="f-personal-birth" >Birth</label>
+                            <input type="date" id="f-personal-birth" title="birth" required>
+                        </div>
+                        <div>
+                            <label for="f-personal-email" >e-mail</label>
+                            <input type="email" id="f-personal-email" title="email" placeholder="@" required>
+                        </div>
+                        <div>
+                            <label for="f-personal-company">Company</label>
+                            <input type="text" id="f-personal-company">
+                        </div>
+
+                    </fieldset>
+                </form>
+                <dialog id="">
+                   <h3>you did the thing </h3> 
+                </dialog>
+            </article>
+            <article class="action-btn">
+                <div><button id="submit" type="submit">submit</button></div>
+                <div><button class="abort" type="button">abort</button></div>
+            </article>
+        </section>
+        
+       
