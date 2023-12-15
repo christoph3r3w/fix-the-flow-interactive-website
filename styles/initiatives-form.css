@@ -27,7 +27,7 @@
 :root{
     --beige:#F5E7E0;
     --beige2:#c7b79eac;
-    --blue:#0D00A4;
+    --blue:#0e00ac;
     --blue2:#0300235c;
     --white:#fff7f7cf;
     --black:#1C1C1C;
@@ -52,21 +52,20 @@
 }
 
 html{
-    overflow-x: hidden;
+    overflow-x: clip;
     overflow-y: scroll;
-    height: 200dvh;
+   
 }
 
 body{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100svw;
+    height: auto;
     inset: 0;
     /* outline: solid blue; */
     background:var(--beige);
-    overflow: hidden;
     background-position: 0px -10px;
-    
+    font-family: sans-serif;
 }
 
 header{
@@ -78,10 +77,12 @@ header{
 .logo{
     display:inline-flex;
     text-decoration: none;
-    /* background-color: coral; */
-    margin: var(--margin-s) 2em;
-    height: 90px;
-    font-family: 'Bodoni Moda', serif;
+    font-family:'Bodoni Moda', serif;
+    scale: max(.1 ,.7) ;
+    margin: 0px;
+    height: clamp(10px , 20px ,50px);
+    
+     
  }
  
 
@@ -108,16 +109,22 @@ header{
  }
 
 
-header .back-btn {
-    /* outline: solid red; */
+ header .back-btn {
     position: relative;
-    margin: var(--margin-s) 10dvw;
-    margin-top: 2rem ;
+    margin: var(--margin-s) 2dvw;
+    margin-top: 18dvh ;
     display: grid;
     place-items: center;
+    z-index: 4;
     >svg{
         scale: 2;
         color: var(--blue);
+
+    &:hover{
+        translate: 0px -5px;
+        color: var(--primary);
+        filter: drop-shadow(2px 5px 1.5px var(--blue2));
+    }
     }
 }
 
@@ -130,36 +137,313 @@ header .back-btn {
     
     /* outline: solid blue; */
     position: absolute;
-    top: 0;
-   
+    top: 1cqi;
     right:  var(--side-gap);
     left: var(--side-gap);
-    padding-top: 10svh;
-    height: 150dvh;
+    padding-top: 9svh;
+    /* height:minmax(100svh 300dvh); */
+    min-height:97dvh ;
 
-    background-image: url(../assets/moring-wall.png);
+    /* background-image: url(../assets/moring-wall.png); */
     row-gap: 1em;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: var(--black);
     box-shadow: 3px 3px 4px rgba(0,0,0,0.1) inset,
     3px 3px 10px rgba(0,0,0,0.2) inset;
     border-radius: 10pc 10pc 0pc var(--m-c) ;
   }
-
+/* everthing in the middle */
   .background :nth-child(n){
     grid-column: mid;
-    /* outline: solid green ; */
-    margin-bottom: var(--vg-s);
-  }
-    form{
-        position: relative;
+    /* margin-bottom: var(--vg-s); */
+ }
+ 
+/* title */
+.background h1{
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    box-shadow: inset 5px 5px 5px 1px var(--blue2),2px 5px 6px 1px var(--blue2);
+    border-radius: 2pc 2pc;
+    padding: var(--vg-n);
+    background-color: var(--blue);
+    color: white;
+    text-shadow: 0px 0px 3px var(--white);
+}
+
+/* description */
+.background .description {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+
+.background form{
+    position: relative;
+   
 
 }
-  .action-btn{
-    position: fixed;
-    background-color: red;
-    /* position:absolute; */
+
+/* if the previous fieldset is not valid, the next one will not show */
+  fieldset:nth-of-type(1):not(:valid) ~ fieldset:nth-of-type(2), 
+  fieldset:nth-of-type(2):not(:valid) ~ fieldset:nth-of-type(3),
+  fieldset:nth-of-type(1):not(:valid) ~ fieldset:nth-of-type(3)
+    {
+  display: none;
   }
+
+  /* article:nth-of-type(1) > fieldset >:not(:valid) ~ .action-btn  {
+    background-color: #0D00A4;
+  } */
+
+  fieldset{
+    border-radius: var(--g-c);
+    border: 1.5px solid rgba(255, 255, 255, 0.577);
+    padding: var(--vg-n);
+    background-color: var(--white);
+    margin-bottom: 3rem;
+    & :nth-child(n){
+        margin-bottom: var(--vg-s); 
+    }
+
+    > legend{
+        /* outline: solid ; */
+        /* margin-inline: auto; */
+        border: 1.5px solid rgba(255, 255, 255, 0.329);
+        border-radius: var(--g-c);
+        background-color: var(--blue);
+        padding: var(--vg-s);
+        font-size: 2rem;
+        font-weight: 100;
+        text-transform: lowercase;
+        color: var(--beige);
+        box-shadow:2px 5px 7px 1px var(--blue2);
+    }
+    >div{
+        font-size: 1.5rem;
+    }
+  }
+
+  input:not([type]),
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    textarea,select
+    {
+        display: block;
+        box-sizing: border-box;
+        width: 30cqi;
+        min-height: 100%;
+        border-radius: var(--m-c);
+        outline: solid var(--blue);
+        font-size: 1.5rem;
+        padding-inline: var(--vg-s);
+
+    &:user-invalid{
+        outline: solid rgba(255, 0, 0, 0.534);
+        }
+    &:user-valid,:checked {
+        background:  rgba(69, 151, 69, 0.116) ;
+        outline: solid  rgba(69, 151, 69, 0.322) ;
+    }
+}
+
+/* event fieldset */
+fieldset:nth-of-type(1){
+    position: relative;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+    }
+    >div:nth-of-type(2){
+    >   input[type="date"],
+        input[type="time"]{
+          width: 30%;
+      }
+    }
+    >div:nth-of-type(4){
+        position: absolute;
+        top: var(--vg-n);
+        right: var(--vg-n);
+       
+    }
+    >div:nth-of-type(4) textarea {
+        
+        max-width: 25cqi;
+        min-width: 25cqi;
+        min-height: 3rem;
+        max-height: 15rem;
+        padding: var(--vg-s) ;
+    }
+    
+}
+
+/* fliter-option fieldset */
+fieldset:nth-of-type(2){
+
+    .bar{
+        display: flex;
+        flex-direction: row;
+        /* outline: solid #0D00A4; */
+        position: relative;
+        gap: 10px;
+        border-radius: var(--m-c);
+        
+    }
+    
+    .filter{
+        position: relative;
+        border: solid rgba(255, 0, 0, 0.603);
+        top:0;
+        bottom: 0;
+        margin: var(--vg-s);
+        min-height: 10rem;
+        
+        &:nth-child(1){
+            width: 30%;
+            border: 1.5px solid rgba(255, 255, 255, 0.577);
+        }
+        &:nth-child(2){
+            width: 30%;
+            border: 1.5px solid rgba(255, 255, 255, 0.577);
+            display: grid;
+            column-gap: 10px;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 1fr ;
+            padding:5px ;
+            
+            >:nth-child(n) {
+                border-radius:  var(--g-c) var(--g-c);
+                border: 1.5px solid rgb(255, 255, 255);
+                background-color: white;
+                /* outline: solid; */
+                text-align: center;
+                padding: var(--vg-s);
+            }   
+            >:nth-child(n) input[type=radio]{appearance: none;}
+            >:nth-child(n):has(:checked){
+                border: solid var(--blue);
+                background-color: var(--blue);
+                color: white;
+            }
+            >:nth-child(1){grid-area:1/1/2/2;}
+            >:nth-child(2){grid-area:1/2/2/3;}
+            >:nth-child(3){
+                grid-area:2/1/3/3;
+                
+            }
+        }
+        &:nth-child(3){
+            flex-grow: 1;
+            width: 30%;
+            border: 1.5px solid rgba(255, 255, 255, 0.577);
+            & input[type=text] {
+                width: 100%;
+                appearance: unset;
+                
+            }
+        }
+    }
+    .options .option{
+    
+        text-decoration: none;
+        z-index: -1;
+        position: absolute;
+        inset: .4em;
+        display:grid;
+        place-items: center;
+        
+    }
+    .option:is(#food,#do,#other,#comu,#choose):target{
+        z-index: 1;
+        border: 1.5px solid rgba(255, 255, 255, 0.959);
+        display: grid;
+        border-radius:  var(--g-c) var(--g-c) ;
+        min-height: 70%;
+        /* background-color: var(--white); */
+        
+    }
+    .option#food:target{
+        color: var(--black);
+        background-color: rgb(255, 255, 104);
+     
+    }
+    .option#do:target{
+        color: var(--white);
+        background-color:rgb(42, 119, 42);   
+    }
+    .option#other:target{
+        color: var(--white);
+        background-color: rgba(237, 65, 13, 0.916);
+    }
+    
+    .option#comu:target{
+        color: var(--black);
+        background-color: orange;   
+    }
+    .option#choose:target{
+        color: var(--white);
+        background-color: var(--blue);
+    }
+    #choose{
+        color: blue;
+        /* display:block ; */
+        z-index:0;
+        text-decoration: none;
+        /* position:absolute; */
+    }
+}
+
+fieldset:nth-of-type(3){
+    
+    div :nth-child(n){
+        margin-bottom: var(--vg-s); 
+        
+    }
+}
+
+
+/* submit abort button */
+.action-btn{
+
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--vg-n);
+    margin-bottom: var(--vg-s);
+    >button{
+        /* appearance: none; */
+        flex-grow: 1;
+        display: flex;
+        font-size: 3rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.89);
+        padding: var(--vg-s);
+        min-width: 2em;
+        max-width: 80%;
+        border-radius: var(--g-c) ;
+        background-color: var(--blue2);
+        color: var(--beige);
+        
+    &#submit{
+        /* cursor:not-allowed; */
+        justify-content: center;
+    }
+    > a{
+        color: var(--beige);
+        width: 100%;
+        cursor: pointer;
+    }
+    &:hover{
+        background-color: var(--blue);
+    }
+    }
+}
+
+ 
   

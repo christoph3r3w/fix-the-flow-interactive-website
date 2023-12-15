@@ -6,8 +6,8 @@
     <title>MW-form</title>
     <!-- <link rel="stylesheet" href="/styles\test-filter.css"> -->
     <link rel="stylesheet" href="/styles/initiatives-form.css">
-    <!-- <link rel="stylesheet" href="/styles/Fonts"> -->
-    <script src="./script/form.js"> </script>
+    <link rel="stylesheet" href="/styles/Fonts">
+    <script src="/script/form.js"></script>
 </head>
 
 <body>
@@ -28,8 +28,8 @@
 
         <section class="background" id="bgrnd">
             <article>
-                <h1>title</h1>
-                <p>form describtion </p>
+                <h1>Amsterdam-west Initiative Registration Form</h1>
+                <p class="description">By registering your initiative, you're contributing to the vibrancy of our neighborhood. Please fill out the following details to get started:</p>
                 <form action="get">
                     <fieldset>
                         <legend>Event</legend>
@@ -39,16 +39,28 @@
                         </div>
                         <div>
                             <label for="f-event-DateTime" >Date & time</label>
-                            <input type="date" id="f-event-DateTime" title="event-name">
-                            <input type="time" id="f-event-DateTime" title="event-name">
+                            <input type="date" id="f-event-DateTime" title="event-name" required>
+                            <input type="time" id="f-event-DateTime" title="event-name" required>
                         </div>
                         <div>
-                            <label for="f-event-location" >Location</label>
-                            <input type="text" id="f-event-location" title="event-location" required>
+                            <label for="f-event-location" title="event-location in west-amsterdam" >Location (street)</label>
+                            <select name="locade" id="f-event-location" title="event-location in west-amsterdam" required>
+                                <option value="">choose location</option>
+                                <option value="street">Kinkerstraat</option>
+                                <option value="street">Nassaukade</option>
+                                <option value="street">De Clercqstraat</option>
+                                <option value="street">Rozengracht</option>
+                                <option value="street"> Bilderdijkstraat</option>
+                                <option value="street">Jan Evertsenstraat</option>
+                                <option value="street">Baarsjesweg</option>
+                                <option value="street"> Admiraal de Ruijterweg</option>
+                                <option value="street">Haarlemmerweg</option> 
+                            </select>
                         </div>
                         <div>
                             <label for="f-event-decribtion" >describe the event</label>
-                            <textarea name="" id="f-event-decribtion" rows="10" placeholder="uitleg"></textarea>                        </div>
+                            <textarea name="event description" id="f-event-decribtion" rows="10" placeholder="max 100"></textarea>                        
+                        </div>
 
                     </fieldset>
 
@@ -58,7 +70,7 @@
                                 <!-- main option -->
                                 <section class="filter options">
 
-                                    <a href="#comu" class="option do" id="do" rel="no-refresh">
+                                    <a href="#comu" class="option do" id="do" rel="no-refresh" aria-checked="true">
                                         do something
                                     </a>
                                     <a  href="#food" class="option community" id="comu" rel="no-refresh">
@@ -77,7 +89,7 @@
                                 <!-- market and initiatives -->
                                 <section class="filter M-I">
                                     <label for="market" class="pink">
-                                        <input type="radio" name="pink-choice" id="market"> market
+                                        <input type="radio" name="pink-choice" id="market" > market
                                     </label>
                                 
                                     <label for="initiatives" class="pink">
@@ -85,34 +97,33 @@
                                     </label>
 
                                     <label for="Both" class="pink">
-                                        <input type="radio" name="pink-choice" id="Both" > Both
+                                        <input type="radio" name="pink-choice" id="Both" required> Both
                                     </label>
                                 </section>
                                 <!-- categories -->
                                 <section class="filter category">
-                                    <div class="moreOption choose">
+                                
                                         <label for="f-filter-tag">
-                                            Tag
-                                            <input type="text" id="f-filter-tag">
+                                            <input type="text" id="f-filter-tag" placeholder="Tags">
                                         </label>
                     
                     
                     
-                                     </div>
+                                    
                                 </section>
                         </div>
 
                     </fieldset>
 
                     <fieldset>
-                        <legend>Personal  </legend>
+                        <legend>Personal</legend>
                         <div>
                             <label for="f-personal-name" >Fullname</label>
                             <input type="text" id="f-personal-name" title="fullname" required>
                         </div>
                         <div>
                             <label for="f-personal-birth" >Birth</label>
-                            <input type="date" id="f-personal-birth" title="birth" required>
+                            <input type="date" id="f-personal-birth" title="birthday" required>
                         </div>
                         <div>
                             <label for="f-personal-email" >e-mail</label>
@@ -125,14 +136,18 @@
 
                     </fieldset>
                 </form>
-                <dialog id="">
-                   <h3>you did the thing </h3> 
-                </dialog>
             </article>
+
+            <!-- submit and abort button -->
             <article class="action-btn">
-                <div><button id="submit" type="submit">submit</button></div>
-                <div><button class="abort" type="button">abort</button></div>
+                <button id="submit" type="submit">submit</button>
+                <button class="abort" type="button"><a href="/test-filter.html">abort</a></button>
             </article>
+            <!-- end message -->
+            <dialog id="dialog">
+                <h3>you did the thing </h3> 
+             </dialog>
         </section>
+
         
        

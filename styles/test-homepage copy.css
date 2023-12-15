@@ -18,7 +18,7 @@
 :root{
     --beige:#F5E7E0;
     --beige2:#c7b79eac;
-    --primary:#0D00A4;
+    --primary:#0e00ac;
     --primary2:#0300235c;
     --white:#fff7f7cf;
     --black2:#1C1C1C;
@@ -207,7 +207,7 @@ body:has(.hallen:hover){
                0px 0px 20px var(--white),
               0px 0px 40px var(--white);
               
-        outline: solid orange;
+        
         
     }
     .down-info-hallen :nth-child(n){
@@ -249,10 +249,6 @@ body:has(.hallen:hover){
 
       
 }
-/* .hidden-info:hover {
- 
-    background-color: green;
-} */
 
 .hidden-info{ 
     grid-area: 2/2/4/2;
@@ -281,8 +277,10 @@ body:has(.show:hover) {
     width:90% ;
     height: 90%;
     transition: 1s ease-in-out 1s;
+    border: 14px var(--primary2);
     border-radius: 10em 10em 0em 0em;
     background-color: rgba(255, 166, 0, 0.714);
+    background-color: var(--white);
     }
 
     .glass::before{
@@ -319,7 +317,7 @@ article{
     display: flex;
     flex-direction: column;
 }
-
+/* text midden */
 article .up{
      width: 45vw;
      height: max-content;
@@ -346,6 +344,7 @@ article .up{
     }
 }
 
+/* text west */
 article .down{
     width: max-content;
     /* outline: solid orange; */
