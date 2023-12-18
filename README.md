@@ -3,7 +3,6 @@
 # Midden West 
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
-![Screenshot 2023-10-11 102919](https://github.com/christoph3r3w/MiddenWest-client-website/assets/144007933/1e0947d0-1254-4d7c-b72a-573a9d66da5b).
 
 
 ## Inhoudsopgave
