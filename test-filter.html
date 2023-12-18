@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW</title>
+    <link rel="stylesheet" href="./styles\test-filter.css">
+    <link rel="stylesheet" href="./styles\Fonts">
+    <script src="./script/form.js" defer></script>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,800&family=Genos:wght@200&family=Gluten:wght@300;900&family=Nunito:wght@400;1000&family=Sacramento&display=swap');
+    @import url('https://fonts.adobe.com/fonts/ouma-latin-variable#fonts-section'); 
+    @import url('https://fonts.adobe.com/fonts/gyst-variable'); 
+    @import url('https://use.typekit.net/vup8qod.css');
+    @import url('https://use.typekit.net/vup8qod.css');
+  </style>
+<body>
+    
+        <header>
+                <a href="./index.html" class="logo">
+                    <span class="spanone">.
+                        <!-- <a href="index3.html">.</a> -->
+                    </span>
+                    <span class="spantwo">w</span>
+                </a>
+                <!-- go back button   -->
+                <a href="./index.html" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                </a>  
+                
+        </header>
+    
+            <section class="background" id="bgrnd">
+               <div class="bar">
+                <!-- main option -->
+                <section class="filter options">
+
+                    <a href="#comu" class="option do" id="do" rel="no-refresh">
+                        do something
+                    </a>
+                    <a  href="#food" class="option community" id="comu" rel="no-refresh">
+                        community 
+                    </a>
+                    <a  href="#other" class="option food" id="food" rel="no-refresh">
+                        food
+                    </a>
+                    <a  href="#choose" class="option other" id="other" rel="no-refresh">
+                        other
+                    </a>
+                    <a  href="#do" class="option choose" id="choose" rel="no-refresh">
+                        choose
+                    </a>
+                </section>
+                <!-- market and initiatives -->
+                <section class="filter M-I">
+                    <label for="market" class="pink">
+                        <input type="radio" name="pink-choice" id="market"> market
+                    </label>
+                 
+                    <label for="initiatives" class="pink">
+                        <input type="radio" name="pink-choice" id="initiatives" > initiatives
+                    </label>
+                </section>
+                <!-- categories -->
+                <section class="filter category">
+                    <div class="moreOption choose">
+                
+                        <label for="six" class="optionTwo">
+                            <input type="radio" name="choose" id="six">biking
+                        </label>
+                    
+                    
+                        <label for="seven" class="optionTwo">
+                            <input type="radio" name="choose" id="seven">hotels
+                        </label>
+                    
+                    
+                        <label for="eight" class="optionTwo">
+                            <input type="radio" name="choose" id="eight">hulp thuis
+                        </label>
+                    
+                        
+                        <label for="nine" class="optionTwo">
+                            <input type="radio" name="choose" id="nine">9
+                        </label>
+                    
+                    
+                        <label for="ten" class="optionTwo">
+                            <input type="radio" name="choose" id="ten">10
+                        </label>
+                
+                    
+                        <label for="eleven" class="optionTwo">
+                            <input type="radio" name="choose" id="eleven">11
+                        </label>
+                    
+                    
+                    
+                    </div>
+                </section>
+               </div>
+
+               <!-- glass list -->
+                <section class="glass" id="gls">
+                    
+                        <ul class="container">
+
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <button popovertarget="food-z" class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>cook with linda</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="">10:00</p>
+                                        </article>
+                                        <article class="">
+                                            <p><span>2</span><span>3</span></p>
+                                            <p><span>o</span><span>k</span><span>t</span></p>
+                                        </article>
+                                    </div>    
+                                </button>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <button popovertarget="comu-a"  class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>Help linda</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="">14:00</p>
+                                        </article>
+                                        <article class="">
+                                            <p><span>2</span><span>0</span></p>
+                                            <p><span>n</span><span>o</span><span>v</span></p>
+                                        </article>
+                                    </div>    
+                                </button>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <button popovertarget="food-b"  class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>coffee met linda</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="time">13:00</p>
+                                        </article>
+                                        <article class="date">
+                                            <p><span>0</span><span>2</span></p>
+                                            <p><span>d</span><span>e</span><span>c</span></p>
+                                        </article>
+                                    </div>    
+                                </button>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <div class="details cards">
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div>
+                                <button popovertarget="other-a"  class="details container">                                    
+                                    <div class="details cards">
+                                    <h1>title</h1>
+                                    <br>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, praesentium!\</span>
+                                    </div>    
+                                </button>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>food</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="time">time</p>
+                                        </article>
+                                        <article class="date">
+                                            <p><span>2</span><span>3</span></p>
+                                            <p><span>1</span><span>0</span></p>
+                                        </article>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>food</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="time">time</p>
+                                        </article>
+                                        <article class="date">
+                                            <p><span>2</span><span>3</span></p>
+                                            <p><span>1</span><span>0</span></p>
+                                        </article>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                        <article>
+                                            <h1>food</h1>
+                                            <br>
+                                            <p class="location">straat-naam</p>
+                                            <p class="time">time</p>
+                                        </article>
+                                        <article class="date">
+                                            <p><span>2</span><span>3</span></p>
+                                            <p><span>1</span><span>0</span></p>
+                                        </article>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <div class="details cards">
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div>
+                                <div class="details container">
+                                    <div class="details cards">
+                                    <h1>title</h1>
+                                    <br>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, praesentium!\</span>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block ">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="80">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                    <h1>title</h1>
+                                    <br>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, praesentium!\</span>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="80">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                    <h1>title</h1>
+                                    <br>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, praesentium!\</span>
+                                    </div>   
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                            <li class="block">
+                                <!-- <div>
+                                 <img src="./assets/Townscaper 2023-10-09 17-49-26.png" alt="" width="160">
+                                </div> -->
+                                <div class="details container">
+                                    <div class="details cards">
+                                    <h1>title</h1>
+                                    <br>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, praesentium!\</span>
+                                    </div>    
+                                </div>
+                            </li>
+                            <!-- replace hr with nth-last-of-type line thing -->
+                           
+                </section>
+
+                <!-- <section class="hidden-info"></section> -->
+            </section>
+
+
+
+            <!-- side info -->
+            <section class="side-info">
+               <ul>
+                <li class="side-list"  popover id="food-z" >
+                    <div>
+                        <span class="day">23-10-23</span>/<span class="time">10:00</span>/<span class="location">location</span>
+                    </div>
+                    <article><h1>cook with linda </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis eos atque officia voluptatibus repellat labore deleniti qui magnam ut.</p></article>
+                
+                </li>
+                
+                <li class="side-list" popover id="comu-a">
+                    <div>
+                        <span class="day">20-11-2023</span>/<span class="time">14:00</span>/<span class="location">location</span>
+                    </div>
+                    <article>
+                        <h1>help linda</h1>
+                        <p>she needs help</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis eos atque officia voluptatibus repellat labore deleniti qui magnam ut.</p>
+                    </article>
+                
+                </li>
+                <li class="side-list" id="food-b" popover >
+                    <div>
+                        <span class="day">02-12-2023</span>/<span class="time">13:00</span>/<span class="location">location</span>
+                    </div>
+                    <article>
+                        <h1>coffee with linda</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque corporis voluptatibus veritatis perspiciatis ipsam quos ex reiciendis libero architecto alias doloremque, molestiae non odio ullam iusto error? Laudantium iusto vero odio in facilis saepe accusamus, fugit vel nam nisi eligendi corrupti vitae voluptate eius molestiae error architecto natus placeat! Numquam.</p></article>
+                </li>
+                <li class="side-list" id="other-a" popover>
+                    <div>
+                        <span class="day">day</span><span class="time">time</span>
+                        <br>
+                        <span class="location">location</span>
+                    </div>
+                    <article><h1>title of event</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis eos atque officia voluptatibus repellat labore deleniti qui magnam ut.</p></article>
+                </li>
+              
+               </ul>
+            </section>
+    
+            <section class="form-btn">
+                <div>
+                    <a href="./initiatives-form.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                        <p>Add your own event</p>
+                    </a>
+                </div>
+            </section>
+
+            <div id="cursor"></div>
+
+
+</body>
+</html>

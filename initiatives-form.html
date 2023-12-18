@@ -6,8 +6,8 @@
     <title>MW-form</title>
     <!-- <link rel="stylesheet" href="/styles\test-filter.css"> -->
     <link rel="stylesheet" href="./styles/initiatives-form.css">
-    <link rel="stylesheet" href="./styles/Fonts">
-    <script src="./script/form.js"></script>
+    <link rel="stylesheet" href="styles\Fonts.css">
+    <script src="./script/form.js" defer></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <section class="background" id="bgrnd">
             <article>
                 <h1>Amsterdam-west Initiative Registration Form</h1>
-                <p class="description">By registering your initiative, you're contributing to the vibrancy of our neighborhood. Please fill out the following details to get started:</p>
+                <p class="description">Here you can register your initiative that will contribute to the vibrancy of our neighborhood. Please fill out the following details to get started:</p>
                 <form action="get">
                     <fieldset>
                         <legend>Event</legend>
@@ -66,6 +66,7 @@
 
                     <fieldset>
                         <legend>Filter options</legend>
+                        <p class="description">choose here the filters and tags that corespond to your event</p>
                         <div class="bar">
                                 <!-- main option -->
                                 <section class="filter options">
@@ -145,7 +146,10 @@
             </article>
             <!-- end message -->
             <dialog id="dialog">
-                <h3>you did the thing </h3> 
+                <form action="get" method="dialog">
+                    <h3>you did the thing </h3> 
+                    <button type="submit">Close</button>
+                </form>
              </dialog>
         </section>
 

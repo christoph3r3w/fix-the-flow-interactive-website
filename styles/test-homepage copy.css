@@ -104,12 +104,15 @@ body{
   right: 0;
   width: 97vw;
   height: 105vh;
+
+  background-color:#726b675c;
+  background-blend-mode:screen;
   background-image: url(../assets/9dc190180440397.650ad50e1039e.jpg);
   
   background-repeat: no-repeat; 
   background-position: center;
   background-size:cover;
-  background-color: var(--beige2);
+  /* background-color: var(--beige2); */
   box-shadow: 3px 3px 4px rgba(0,0,0,0.1) inset,
   3px 3px 10px rgba(0,0,0,0.2) inset;
   border-radius: 15pc 0pc 0pc 0pc;
@@ -151,7 +154,7 @@ body{
 }
 
 body:has(.hallen:hover){
-    --Tdelay : 2s;
+    --Tdelay : 1s;
     background-color: var(--hstblue);
     transition: .5s ease-in-out var(--Tdelay);
     
