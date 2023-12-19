@@ -1,15 +1,6 @@
 # Midden West 
 ![Screenshot 2023-12-18 102935](https://github.com/christoph3r3w/fix-the-flow-interactive-website/assets/144007933/9fbbbe67-ef24-44e7-80f2-804d3fcba91b)
 
-
-
-
-## Inhoudsopgave
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bron)
-  * [Licentie](#licentie)
-
 ## Beschrijving
 In this assignment I continued working on the initiative platform for De Hallen. 
 
