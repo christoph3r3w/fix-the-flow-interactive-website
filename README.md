@@ -18,7 +18,7 @@
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-•	Visual studio code
+•	Visual studio code (HTML, CSS, JS)
 
 •	Miro
 
