@@ -1,21 +1,24 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Midden West 
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+![Screenshot 2023-12-18 102935](https://github.com/christoph3r3w/fix-the-flow-interactive-website/assets/144007933/9fbbbe67-ef24-44e7-80f2-804d3fcba91b)
+
 
 
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
+  * [Bronnen](#bron)
   * [Licentie](#licentie)
 
 ## Beschrijving
+In this assignment I continued working on the initiative platform for De Hallen. 
 
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+latest additions :
+* interactive form-page
+* layout changed to be more user-friendly
+* made the layout more responsive for 
+* more javascript interactions 
+
 
 ## Kenmerken
 •	Visual studio code (HTML, CSS, JS)
@@ -34,6 +37,8 @@
 •	[Mdm ](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
 
 •	[Wayback machine](https://archive.org/)
+
+* [Abduzeedo](https://abduzeedo.com/)
 
 
 
