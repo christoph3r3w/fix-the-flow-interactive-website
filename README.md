@@ -19,7 +19,7 @@ latest additions :
 •	Github desktop
 
 ## bron
-•[	Coolers ](https://coolors.co/).
+•[Coolers ](https://coolors.co/).
 
 •	[Google fonts](https://fonts.google.com/?classification=Display)
 
