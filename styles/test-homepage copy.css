@@ -105,7 +105,7 @@ body{
   width: 97vw;
   height: 105vh;
 
-  background-color:#726b675c;
+  background-color:#726b672d;
   background-blend-mode:screen;
   background-image: url(../assets/9dc190180440397.650ad50e1039e.jpg);
   
@@ -152,7 +152,7 @@ body{
         transform-origin: bottom; */
     }
 }
-
+/* what happens when hovering over the events button  */
 body:has(.hallen:hover){
     --Tdelay : 1s;
     background-color: var(--hstblue);
@@ -181,7 +181,7 @@ body:has(.hallen:hover){
     }
     .glass{
         /* background-color:var(--hstgrey); */
-        background-color:#dfe4e594;
+        background-color:#dfe4e533;
         transition: .5s ease-in-out 2s;
         .show p{
             display: none;
@@ -221,6 +221,7 @@ body:has(.hallen:hover){
     
 }
 
+/* section containing middle information  */
 .glass{
     grid-area: 2/2/4/3;
     /* outline: solid forestgreen; */
@@ -270,6 +271,7 @@ body:has(.hallen:hover){
     
 } 
 
+/* when hovering over the info tab */
 body:has(.show:hover) {
 
     .hidden-info{
@@ -311,6 +313,8 @@ body:has(.show:hover) {
         }
     }
 }
+
+/* section that contains the text midden west  */
 article{
     z-index: 4; 
     /* outline: solid green; */
@@ -319,10 +323,11 @@ article{
     top:5rem;
     display: flex;
     flex-direction: column;
+
 }
 /* text midden */
 article .up{
-     width: 45vw;
+     width: 45cqw;
      height: max-content;
     /* outline: solid yellow; */
     position: relative;
@@ -338,7 +343,7 @@ article .up{
         /* outline: solid blue; */
         position: absolute;
         width: max-content;
-        font-size: 4rem;
+        font-size: calc(1em + 3.2cqw);
         font-family: 'Bodoni Moda',sans-serif;
         /* font-family: 'Author-Variable'; */
         color: var(--black);
@@ -347,33 +352,45 @@ article .up{
     }
 }
 
-/* text west */
+/* section with text west */
 article .down{
     width: max-content;
     /* outline: solid orange; */
     flex-basis: 1;
     margin-bottom: 12rem;
-    
+
+    /* text west */
     .circle{
     display: flex;
     flex-wrap: nowrap;
     gap: 5.4rem;
     font-size: 16rem;
+    font-size: calc(1rem + 12cqw * .8rem);
     line-height: 75%;
     text-decoration: none;
     color: var(--black);
     font-family:"sacramento";
     /* font-family: 'Author-Variable'; */
     transition: .5s ease-out .1s;
+    transition-property:filter, color, translate;
     z-index: 100;
-        &.circle:hover{
+
+        &.circle:hover,:focus{
         color: var(--primary);
         translate: 0px -10px;
         filter: drop-shadow(30px 40px 4px var(--primary2));
         
         }
-                
+
+        &.circle:active{
+            
+            filter: drop-shadow(15px 20px 4px var(--primary2));
+            translate: 0px -5px;
+            transition:all .2s linear 0s;
+          }
+        
     }
+   
     &.event{
         display: none;
         
