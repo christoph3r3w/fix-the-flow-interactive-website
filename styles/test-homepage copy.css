@@ -210,12 +210,22 @@ body:has(.hallen:hover){
                0px 0px 20px var(--white),
               0px 0px 40px var(--white);
               
-        
+        .hall{
+            font-size: calc(1em + 13cqw);
+        }
         
     }
     .down-info-hallen :nth-child(n){
+        opacity: 1;
         display: inline;
         left: 7rem;
+        &:nth-child(1){
+            transform: translateX(-40px) rotateX(1turn);
+            transition: 2s ease 1.8s ;
+        }
+        &:nth-child(2){
+            background-color: var(--hstgrey);
+        }
         
         }
     
@@ -302,10 +312,16 @@ body:has(.show:hover) {
     
     .down-info-mw :nth-child(n){
         display: block;
+        opacity: 1;
         color: black;
+        &:nth-child(1){
+            transform: translateY(-40px) rotateY(1turn);
+            transition: 2s ease 1.8s ;
+        }
     }
     .down-info-hallen :nth-child(n){
         display: block;
+        opacity: 1;
         color: black;
         &:nth-child(1){
             transform: translateX(-40px) rotateX(1turn);
@@ -343,7 +359,7 @@ article .up{
         /* outline: solid blue; */
         position: absolute;
         width: max-content;
-        font-size: calc(1em + 3.2cqw);
+        font-size: calc(.5em + 3.2cqw);
         font-family: 'Bodoni Moda',sans-serif;
         /* font-family: 'Author-Variable'; */
         color: var(--black);
@@ -364,8 +380,8 @@ article .down{
     display: flex;
     flex-wrap: nowrap;
     gap: 5.4rem;
-    font-size: 16rem;
-    font-size: calc(1rem + 12cqw * .8rem);
+    /* font-size: 16rem; */
+    font-size: calc(1em + 15cqw);
     line-height: 75%;
     text-decoration: none;
     color: var(--black);
@@ -402,14 +418,21 @@ article .down{
     
 }
 
-article:has(.circle:hover) .down-info-mw :nth-child(2){
-    display: block;
-    text-shadow: 0px 0px 3px var(--beige),
-               0px 0px 20px var(--beige),
-              0px 0px 40px var(--beige),
-              0px 0px 30px var(--beige);
+article:has(.circle:hover) .down-info-mw {
     
+    :nth-child(2){
+        display: block;
+        text-shadow: 0px 0px 3px var(--beige),
+                    0px 0px 20px var(--beige),
+                    0px 0px 40px var(--beige),
+                    0px 0px 30px var(--beige);
+    }
 
+    :nth-child(1){
+        opacity:1;
+        transform: translateY(-40px) rotateY(1turn);
+        transition: 2s ease .8s ;
+            }
 }
 
 .down-info-mw{
@@ -417,22 +440,29 @@ article:has(.circle:hover) .down-info-mw :nth-child(2){
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: fit-content;
+    padding: 5px;
     place-items: center;
     position: absolute;
-    bottom: 12vh;
-    left: 12vw;
+    bottom: 8dvh;
+    left: 8dvw;
     font-size: x-large;
     font-family: 'Bodoni Moda',sans-serif;
     font-weight: 600;
     color: var(--primary);
 
+   
+
     :nth-child(1){
-        display: none;
+        opacity: 0;
+        
         
     }
     :nth-child(2){
         display: none;
-       
+        border: 3px solid var(--blue);
+        border-radius:var(--g-c) var(--g-c) ;
+        background-color: white;
+        padding: 8px;
     }
 }
 
@@ -449,12 +479,15 @@ article:has(.circle:hover) .down-info-mw :nth-child(2){
     font-weight: 600;
 
     :nth-child(1){
-        display: none;
-       transform: translateX(-40px);
+       opacity: 0;
+       transform: translateX(-10px);
     }
     :nth-child(2){
         display: none;
-        
+        border: 3px solid var(--blue);
+        border-radius:var(--g-c) var(--g-c) ;
+        background-color: white;
+        padding: 8px;
     }
 }
 
@@ -558,8 +591,14 @@ article .show{
             border-radius: 15pc 0pc 0pc 0pc;
         }
 
+        .up  {
+            width: 80cqw;
+            h1{
+            font-size: calc(1em + 5cqw);
+            }
+        }
         .down.west .circle{
-            font-size: 14rem; 
+            font-size: calc(1em + 21cqw);
             font-weight: 400;
             padding-right: var(--vg-n);
         }
@@ -584,6 +623,26 @@ article .show{
     }
     
 }
-@media (width < 800px){}
+@media (width < 790px){
+
+    article{
+    & .up  {
+        width: 10cqw;
+        color: red;
+        h1{
+        font-size: calc(2em + 15cqw);
+   
+        }
+    }
+
+    & .down.west .circle{
+        font-size: calc(.5em + 1cqw);
+        font-weight: 200;
+        padding-right: var(--vg-n);
+        color: red;
+    }
+}
+
+}
 
 
