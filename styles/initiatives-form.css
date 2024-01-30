@@ -196,6 +196,10 @@ header{
   display: none;
   }
 
+  fieldset > input[type="text"]:invalid{
+    color: blue;
+  }
+
   /* article:nth-of-type(1) > fieldset >:not(:valid) ~ .action-btn  {
     background-color: #0D00A4;
   } */
